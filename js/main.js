@@ -13,6 +13,7 @@ $('.nav-pills li a').on('click',function(){
       }
   }    
 })
+// notify
 
 
 $('.notification').on('click',function(){
