@@ -1,0 +1,394 @@
+section.index
+  .main-section-container
+    display: flex
+    grid-gap: 72px
+    height: 100%
+    .left-bar
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 23px 29px 40px
+      background: $black
+      border-radius: 24px
+      z-index: 2
+      &::after
+        content: ''
+        position: absolute
+        height: 100%
+        width: 82px
+        background: $black
+        opacity: .7
+        right: 0
+        top: 0
+        filter: blur(60px)
+        z-index: 0
+    
+      .middle-nav-links
+        position: relative
+        z-index: 2
+        margin-top: 50px
+        +flex_3
+        grid-gap: 40px
+        align-items: center
+      
+      .logout
+        margin-top: auto
+        position: relative
+        z-index: 2
+    
+    .right-section
+      width: 100%
+      display: grid
+      grid-template-columns: 56% 1fr
+      justify-content: space-between
+      .logo-mobile
+        display: none
+      .right-left-box
+        .welcome-page
+          background: #F5F5F7
+          border-radius: 14px
+          +flex_1
+          grid-gap: 100px
+          padding: 0 50px
+          .left-content
+            display: flex
+            flex-direction: column
+            grid-gap: 15px
+          p.title
+            +b-r
+            color: $black
+            font-size: 36px
+            line-height: 57px
+            
+          p.content
+            +r-r
+            color: $black
+            font-size: 16px
+            line-height: 24px
+        
+        .introduction
+          +flex_1
+          grid-gap: 30.67px
+          padding: 8px
+          background: #F5F5F7
+          margin-top: 15px
+          border-radius: 14px
+
+          .intro-box
+            display: flex
+            width: 100%
+            flex-wrap: wrap
+            .intro-right
+              margin-left: unset !important
+              margin-top: 10px
+              +flex_1
+              width: 100%
+            .comp-box
+              width: 50px
+              height: 50px
+              +flex_2
+              background: $white
+              border-radius: 12px
+              margin-right: 18.5px
+              img
+                width: 31px
+                height: 25px
+          
+            .intro-info
+              display: flex
+              flex-direction: column
+              justify-content: space-around
+              .title
+                +b-r
+                color: $black
+                font-size: 16px
+                line-height: 26px
+              
+              .author
+                +r-r
+                color: $black
+                font-size: 13px
+                line-height: 15px
+
+            .intro-right
+              margin-left: auto
+              display: flex
+              align-items: center
+              grid-gap: 18.5px
+              .content-box
+                width: 40px
+                height: 40px
+                +flex_2
+                background-image: url('../img/circle.svg')
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+                +r-r
+                font-size: 13px
+                line-height: 14px
+              .continue
+                width: 120px
+                height: 40px
+                +flex_2
+                background: $black
+                color: $white
+                border-radius: 8px
+                transition: all .3s
+                +r-r
+                font-size: 13px
+                line-height: 15px
+                font-weight: bold
+                &:hover
+                  color: $black
+                  background: $white
+                  border: 1px solid $black
+          
+          .intro_buttons
+            display: flex
+            grid-gap: 10px
+            button
+              +flex_2
+              width: 30px
+              height: 30px
+              border: 2px solid $black
+              border-radius: 50%
+              &.right-arrow
+                transform: rotate(180deg)
+
+        .courses-main
+          margin-top: 10px
+          p.title-course
+            +b-r
+            font-size: 24px
+            line-height: 28px
+            color: $black
+          .courses-box
+            display: flex
+            flex-direction: column
+            grid-gap: 10px
+            margin-top: 16px
+            .nav-pills
+              display: flex
+              grid-gap: 15px
+              li
+                a
+                  +b-r
+                  font-size: 16px
+                  line-height: 26px
+                  color: $black
+                  opacity: .3
+                  transition: opacity .3s
+                  &.active
+                    opacity: 1
+                    
+            .courses
+              display: grid
+              width: 100%
+              grid-gap: 16px
+              li
+                display: flex
+                align-items: center
+                padding: 8px 24px 8.5px
+                background: #F5F5F7
+                border-radius: 14px
+                .course-left
+                  display: flex
+                  grid-gap: 24px
+                  .course-img
+                    background: $white
+                    border-radius: 12px
+                    width: 64px
+                    height: 64px
+                    +flex_2
+                  
+                  .course-name
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    p.title
+                      +b-r
+                      font-size: 16px
+                      line-height: 26px
+                      color: $black
+                      
+                    p.author
+                      +r-r
+                      font-size: 13px
+                      line-height: 15px
+                      color: $black
+                
+                .course-center
+                  width: 154px
+                  +flex_1
+                  grid-gap: 10px
+                  margin-left: auto
+                  .same-block
+                    +flex_1
+                    grid-gap: 8px
+                    p
+                      +r-r
+                      font-size: 13px
+                      line-height: 15px
+                      color: $black
+
+                button
+                  width: 120px
+                  height: 40px
+                  margin-left: 30px
+                  +flex_2
+                  background: $black
+                  color: $white
+                  border-radius: 8px
+                  transition: all .3s
+                  +r-r
+                  font-size: 13px
+                  line-height: 15px
+                  font-weight: bold
+                  &:hover
+                    color: $black
+                    background: $white
+                    border: 1px solid $black
+          
+      .right-form-chart
+        position: relative
+        .right-header
+          +flex_1
+          grid-gap: 35px
+          form
+            width: 100%
+            height: 40px
+            background: #F5F5F7
+            border-radius: 8px
+            padding: 10px 15px
+            outline: none
+            border: none
+            display: flex
+            grid-gap: 10px
+            input
+              width: 100%
+              background: none
+              outline: none
+              border: none
+              +r-r
+              font-size: 16px
+              line-height: 16px
+
+          .right-header-avatar
+            +flex_1
+            grid-gap: 17px
+            position: relative
+            .notification
+              position: relative
+              span
+                position: absolute
+                right: -3px
+                top: -3px
+                width: 14px
+                height: 14px
+                +flex_2
+                +r-r
+                font-size: 10px
+                line-height: 12px
+                color: $white
+                background: #F45B5B
+                border-radius: 50%
+            
+            .avatar
+              +flex_1
+              grid-gap: 8px
+              img[avatar]
+                width: 40px
+                height: 40px
+                border-radius: 8px
+
+        .notification-info
+          position: absolute
+          max-width: 295px
+          padding: 24px
+          background: #BCBCC6
+          border-radius: 14px
+          display: grid
+          grid-gap: 16px
+          right: 0
+          top: 53px
+          opacity: 0
+          visibility: hidden
+          transition: opacity .3s
+          &.active
+            opacity: 1
+            visibility: visible
+          .close
+            position: absolute
+            right: 8px
+            top: 8px
+          .step-info
+            display: flex
+            grid-gap: 16px
+            align-items: flex-start
+            background: #FFFFFF
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2)
+            border-radius: 4px
+            padding: 16px 16px 8px
+            .right-not
+              display: flex
+              flex-direction: column
+              grid-gap: 4px
+              .not-header
+                +flex_1
+                grid-gap: 8px
+                +r-r
+                font-size: 10px
+                line-height: 16px
+                letter-spacing: 0.0125em
+                text-transform: uppercase
+                color: rgba(0, 0, 0, 0.56)
+
+        .right-2-step-info
+          display: grid
+          grid-template-columns: 1fr 1fr
+          grid-gap: 24px
+          margin-top: 24px
+          div
+            background: #F5F5F7
+            border-radius: 14px
+            height: 96px
+            +flex_2
+            grid-gap: 11px
+            p.num
+              +b-r
+              color: $black
+              font-size: 64px
+              
+            p.name
+              +r-r
+              color: $black
+              font-size: 16px
+              line-height: 24px
+              max-width: 80px
+
+        .statistics
+          
+          .mobile-chart-open
+            display: none !important
+            width: 100px
+            height: 40px
+            background: $black
+            +flex_2
+            border-radius: 8px
+            margin: 0 auto
+            +r-r
+            font-size: 12px
+            line-height: 14px
+            color: $white
+            margin-top: 10px
+          p.stats
+            +b-r
+            font-size: 24px
+            line-height: 36px
+          
+          #line-chart
+            width: 100%
+            height: 226px
+            &.open
+              display: block !important

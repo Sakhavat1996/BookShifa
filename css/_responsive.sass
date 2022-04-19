@@ -1,0 +1,182 @@
+@media (min-width: 1920px)
+  section.index
+    padding: 52px 146px 85px 82px
+    .main-section-container
+      .right-section
+        grid-gap: 181px
+        .right-left-box 
+          .welcome-page
+            padding: 0 50px
+  
+@media (min-width: 1600px)
+  section.index
+    padding: 52px 146px 85px 82px
+    .main-section-container
+      .right-section
+        grid-gap: 137px
+        .right-left-box 
+          .welcome-page
+            padding: 0 40px
+
+@media (min-width: 1440px)
+  section.index
+    padding: 28px 116px 28px 46px
+    .main-section-container
+      .right-section
+        grid-gap: 67px
+
+@media (min-width: 1200px)
+  section.index
+    padding: 24px 80px 24px 32px
+    .main-section-container
+      .right-section
+        grid-gap: 57px
+        .right-left-box 
+          .welcome-page
+            padding: 0 30px
+
+@media (max-width: 1200px)
+  section.index
+    height: auto
+    .main-section-container 
+      .left-bar
+        position: fixed
+        bottom: 0
+        left: 0
+        right: 0
+        margin: 0 auto
+        width: calc( 100% - 14px )
+        flex-direction: row
+        padding: 17px 17px 17px 27px
+        img
+          width: 20px
+          height: 20px
+
+        .logout
+          margin-left: auto
+
+        .logo
+          display: none
+        .middle-nav-links
+          flex-direction: row
+          margin: 0
+          grid-gap: 30px
+          
+      .right-section
+        padding: 0 21px 71px
+        grid-gap: 0 40px 
+        .logo-mobile
+          +flex_2
+          grid-column-start: 1
+          grid-column-end: 3
+          padding: 15px 0 
+
+
+        canvas
+          width: 100% !important
+
+@media (max-width: 991px)
+  section.index 
+    .main-section-container 
+      .right-section
+        grid-template-columns: 1fr
+        grid-gap: 10px
+
+        .right-form-chart
+          grid-row-start: 2
+
+        .logo-mobile
+          +flex_2
+          grid-column: unset
+          grid-row-start: 1
+
+@media (max-width: 768px)
+  section.index 
+    .main-section-container 
+      .right-section 
+        .right-form-chart 
+          .right-2-step-info 
+            div 
+              p.num
+              font-size: 36px
+              line-height: 57px
+
+          .statistics 
+            .mobile-chart-open
+              display: block !important
+            
+            p.stats
+              display: none !important
+            #line-chart
+              display: none !important
+  
+        .right-left-box 
+          .welcome-page
+            padding: 20px 14px
+            p.title
+              font-size: 16px
+              line-height: 25px
+            p.content
+              font-size: 13px
+              line-height: 16px
+
+            img
+              width: 99px
+
+          .introduction
+            flex-direction: column
+            background: unset
+            padding: 0
+            grid-gap: 4px
+            .intro-box
+              padding: 5px 3px
+              background: #F5F5F7
+              border-radius: 14px
+
+          .courses-main 
+            .courses-box
+              .nav-pills 
+                li 
+                  a 
+                    font-size: 14px
+                    line-height: 18px
+              .courses 
+                li
+                  display: grid
+                  grid-template-columns: 1fr 1fr
+                  padding: 5px  15px 5px 5px
+
+                  button
+                    grid-column-start: 2
+                    grid-row-start: 1
+                    margin-left: auto
+                    width: 67px
+                    height: 22px
+                    font-size: 10px
+                    line-height: 12px
+
+                  .course-center
+                    grid-column-start: 1
+                    grid-column-end: 3
+                    justify-content: flex-end
+
+                  .course-left
+                    grid-gap: 9px
+                    .course-img
+                      width: 40px
+                      height: 40px
+                      img
+                        width: 30px
+                        height: 30px
+                    
+                    .course-name
+                      p
+                        font-size: 12px !important
+                        line-height: 14px !important
+                  
+@media (min-height: 850px)
+  section.index
+    .main-section-container
+      .middle-nav-links
+        margin-top: 71px
+        grid-gap: 64px
