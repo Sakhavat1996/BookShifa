@@ -162,13 +162,9 @@ section.index .main-section-container .right-section .right-left-box .introducti
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 section.index .main-section-container .right-section .right-left-box .introduction .intro-box .intro-right {
-  margin-left: unset !important;
-  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -935,6 +931,14 @@ section.index .main-section-container .right-section .right-form-chart .statisti
     padding: 5px 3px;
     background: #F5F5F7;
     border-radius: 14px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section.index .main-section-container .right-section .right-left-box .introduction .intro-box .intro-right {
+    margin-left: unset !important;
+    margin-top: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   section.index .main-section-container .right-section .right-left-box .courses-main .courses-box .nav-pills li a {
     font-size: 14px;
